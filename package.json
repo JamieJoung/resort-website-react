@@ -2,6 +2,7 @@
   "name": "resort-website-react",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
   "dependencies": {
     "@testing-library/dom": "^10.4.1",
     "@testing-library/jest-dom": "^6.9.1",
@@ -14,17 +15,15 @@
     "react": "^19.2.4",
     "react-dom": "^19.2.4",
     "react-router-dom": "^7.13.0",
-    "react-scripts": "5.0.1",
     "sass": "^1.97.3",
     "typescript": "^4.9.5",
     "web-vitals": "^2.1.4",
     "zustand": "^5.0.11"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
   },
   "eslintConfig": {
     "extends": [
@@ -46,7 +45,9 @@
   },
   "devDependencies": {
     "@types/node": "^25.2.0",
+    "@vitejs/plugin-react-swc": "^4.2.3",
     "concurrently": "^9.2.1",
-    "json-server": "^1.0.0-beta.5"
+    "json-server": "^1.0.0-beta.5",
+    "vite": "^7.3.1"
   }
 }
